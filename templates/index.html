@@ -1,0 +1,38 @@
+<!--index.html-->
+{% extends "HTML/base.html" %}
+{% block title %} 欢迎光临我的博客 {% endblock title %}
+<!--
+<div class="ui inverted vertical masthead center aligned segment">
+<div class="ui text container">
+	<h1 class="ui inverted header">
+	1981-Tech-Blog </h1>
+	<h2>欢迎光临</h2>
+</div>
+</div>
+<div class="ui vertical segment">
+{% for post in posts %}
+	<p style="font-size: 16pt;font-weight: bold;">
+				<a class="ui link" href="/post/{{post.slug}}">{{ post.title }}</a>
+	</p>
+{% endfor %}
+</div>
+<div class="ui inverted vertical segment">
+<h3>现在时刻：{{ now }}</h3>
+</div>
+-->
+{% block headmessage %}
+<div class="ui inverted blue menu">
+	<div class="item">
+		<i class="browser icon"></i>
+		<h2 class="ui inverted blue vertical segment"> 本站文章列表</h2>
+	</div>
+	
+</div>
+{% endblock headmessage %}
+{% block content %}
+{% for post in posts %}
+	<p style="font-size: 16pt;font-weight: bold;">
+		<a class="ui link" href="/post/{{post.slug}}">{{ post.title }}</a>
+	</p>
+{% endfor %}
+{% endblock content %}
