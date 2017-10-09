@@ -1,24 +1,25 @@
 <!--header.html-->
 {% load staticfiles %}
 <!DOCTYPE html>
-<div class="ui sizer vertical segment">
-		<h1 class="ui header inverted segment">欢迎光临 1981-Tech-Blog </h1>
-</div>
-<div class="ui top inverted menu">
-	<div class="item">
-		<img src="{% static "images/logo.png" %}">
-	</div>
-	<a class="item">Features</a>
-	<a class="item">Testimonials</a>
-	<a class="item">Sign-in</a>
-	<div class="right menu">
+<div class="ui borderless fixed blue inverted pointing menu">
+	<div class="ui container">
 		<div class="item">
-			<div class="ui icon input">
-				<input type="text" placeholder="Search...">
-				<i class="search link icon"></i>
-			</div>
+			<img src="{% static "images/logo.png" %}">
 		</div>
-		<a class="ui item ">登录</a>
-		<a class="ui item ">注册</a>
+		<a class="header active item" href="#">首页</a>
+		<a class="item" href="#">新闻专题</a>
+		<a class="item" href="#">python3-Django</a>
+		<a class="item" href="#">PHP-Laravel</a>
+		<a class="item" href="#">关于我</a>
+	</div>
+</div>
+<div class="ui grid container">
+	<div class="row" id="page-header">
+		<div class="ui basic segment">
+			<h1 class="ui sub header">
+			Warlock921 Blog
+			</h1>
+			<span> 1981-Tech python3-Django</span>
+		</div>
 	</div>
 </div>
