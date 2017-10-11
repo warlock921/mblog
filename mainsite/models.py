@@ -8,6 +8,7 @@ class Post(models.Model):
 	slug = models.CharField(max_length=200)
 	body = models.TextField()
 	pub_date = models.DateTimeField(default = timezone.now)
+	auth = models.CharField(max_length=100,default = 'warlock921')
 
 
 	class Meta:
