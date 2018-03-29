@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'yyd0xscbluhmkq$hrhr8_!l8e_3ijc7^#!nfrao+k-03=$g!l!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['0.0.0.0','localhost','127.0.0.1']
+ALLOWED_HOSTS = ['120.79.241.235','www.int81.com','int81.com']
 
 
 # Application definition
@@ -79,7 +79,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'mblogdb',
         'USER':'root',
-        'PASSWORD':'P@ssword',
+        'PASSWORD':'ltjg810921',
         'HOST':'localhost',
         'PORT':'3306',
     }
@@ -128,3 +128,4 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'mainsite/static'), 
 
 ]
+STATIC_ROOT = os.path.join(BASE_DIR,"static")
